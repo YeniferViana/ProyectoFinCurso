@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="agregar-pedido.html">Agregar Pedido</a>
+                <a href="agregar-usuario.html">Agregar Usuario</a>
+                <a href="#historial-pedidos">Historial de Pedidos</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="historial-pedidos">
+            <h2>Historial de Pedidos</h2>
+            <!-- Aquí se mostrarán los pedidos agregados -->
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdown-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
